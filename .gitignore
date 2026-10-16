@@ -1,0 +1,31 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Downloads and generated files
+downloads/
+vector_db/
+chroma_db/
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.webm
+
+# Mac and editor files
+.DS_Store
+.vscode/
+EOF
